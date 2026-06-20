@@ -17,8 +17,8 @@ def fetch_poster(movie_id):
         return "https://via.placeholder.com/500x750?text=No+Poster"
 
 st.header('Movie Recommender System')
-movies = pickle.load(open('Model/movie_list.pkl','rb')
-similarity = pickle.load(open('Model/similarity1.pkl','rb')
+movies = pickle.load(open('Model/movie_list.pkl','rb'))
+similarity = pickle.load(open('Model/similarity1.pkl','rb'))
 
 selected_movie = st.selectbox("Select a movie", movies['title'].values)
 
